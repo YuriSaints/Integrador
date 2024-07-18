@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Brotando Compostagem</title>
+</head>
+<body>
+
+    <main class="tela">
+    <header>
+
+        <img src="IMG/logopng.png" alt="">
+
+        <nav class="navbar">
+            
+        <ul>
+            <h1 id="mudacor">BEM VINDO!</h1>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#assinaturas">Assinaturas</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <div class="loja">
+        <h1>Lojinha</h1>
+        
+        <section id="todosProdutos">
+            <div class="produtos">
+                <div class="produto">
+                    <h2>Húmus de minhoca</h2>
+                    <p>500g - R$8</p>
+                    <p>1Kg - R$13</p>
+                </div>
+    
+                <div class="eobotao">
+                    <button>COMPRAR</button>
+                </div>        
+            
+            </div>
+            <div class="produtos">
+                <div class="produto">
+                    <h2>Chorume</h2>
+                    <p>diluído</p>
+                    <p>500ml - R$6</p>
+                    <p>concertrado</p>
+                    <p>500ml - R$10</p>
+                </div>
+    
+                <div class="eobotao">
+                    <button>COMPRAR</button>
+                </div>        
+            
+            </div>
+            <div class="produtos">
+                <div class="produto">
+                    <h2>Serragem</h2>
+                    <p>1Kg - R$7</p>
+                    <p>2Kg - R$10</p>
+                </div>
+    
+                <div class="eobotao">
+                    <button>COMPRAR</button>
+                </div>        
+            
+            </div>
+
+
+        </section>
+
+    <footer>
+        <p>todos os direitos reservados a &copy; Brotando Compostagem </p>
+    </footer>
+    </main>
+    <script>
+        function getColorFromPalette(index) {
+            const palette = [
+                '#FFFF00', // Amarelo
+                '#00FF00', // Verde
+                '#0000FF', // Azul
+                '#FF0000', // Vermelho
+                '#FFFFFF', // Branco
+                '#000000'  // Preto
+
+            ];
+            return palette[index % palette.length];
+        }
+        
+        function changeHeadingColor() {
+            const heading = document.getElementById('mudacor');
+            let currentIndex = 0;
+            setInterval(function() {
+                heading.style.color = getColorFromPalette(currentIndex);
+                currentIndex = (currentIndex + 1) % 7; // 7 é o total de cores na paleta
+            }, 750);
+        }
+        
+        changeHeadingColor();
+        </script>
+        
+</body>
+</html>
