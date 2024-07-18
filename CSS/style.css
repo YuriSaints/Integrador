@@ -60,10 +60,7 @@ ul li a:hover{
     display: flex;
     flex-direction: column;
     gap:5rem;
-    background-image: url(../IMG/cobrindo-residuos-com-serragem-600x450.png);
-    background-repeat: no-repeat;
-    background-position:150px 1px ;
-    transform: scaleY();
+    background-color: violet;
 }
 
 
